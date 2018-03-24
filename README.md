@@ -10,6 +10,8 @@ Gulp is a Node.js library or toolkit for automating time consuming tasks in your
 > - Watching for any changes in the specified files and automatically changing the production code according to it.  
 ## How to use Gulp?
 Pre-assuming that you know how to create a basic node.js project using npm, open a command window or terminal in your project directory and type the following command.  
+```npm install -g gulp```  
+The above command globally installs gulp on your system. Then run the following command.  
 ```npm install --save-dev gulp```  
 Then create a file named __gulpfile.js__ in the root directory of your project.  
 Have a look at the gulpfile of this project and you can now create tasks as shown in the file.   
@@ -18,3 +20,5 @@ Enter the following command in the terminal in root directory of your project.
 ```npm install --save-dev gulp-uglify```  
 After doing this you can now include this library in your gulp file by using ```require('gulp-uglify')```.  
 For further details of implementation refer to the gulpfile of this project.
+#### In this project the 'dist' folder contains exapmle production code and the 'src' folder contains example development code. You can delete the 'dist' folder and can recreate it from the development code by simply running ```gulp``` command.
+ 
